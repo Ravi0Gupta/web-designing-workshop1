@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 8 - Hyperlinks and Images</title>
+<style>
+body{font-family:Arial;line-height:1.6;max-width:800px;margin:20px auto}
+img{border:2px solid #333;border-radius:8px}
+.card{background:#f4f4f4;padding:15px;border-radius:8px}
+</style>
+</head>
+<body id="top">
+
+<header>
+<h1>College Portal - Links & Images</h1>
+<nav>
+<a href="#links">Links</a> |
+<a href="#images">Images</a> |
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<hr>
+
+<h2 id="links">1. Types of Hyperlinks</h2>
+<div class="card">
+<p><b>a) External Link (opens in new tab):</b><br>
+<a href="https://www.w3schools.com" target="_blank" rel="noopener" title="Learn HTML on W3Schools">Visit W3Schools ↗</a></p>
+
+<p><b>b) Internal Link (same page):</b><br>
+<a href="#images">Jump to Images Section ↓</a> |
+<a href="#contact">Jump to Contact ↓</a></p>
+
+<p><b>c) Email Link:</b><br>
+<a href="mailto:admission@college.edu?subject=Admission%20Enquiry">admission@college.edu</a></p>
+
+<p><b>d) Phone Link:</b><br>
+<a href="tel:+911122334455">Call: +91 11 2233 4455</a></p>
+
+<p><b>e) Download Link:</b><br>
+<a href="prospectus.pdf" download>Download Prospectus (PDF)</a></p>
+</div>
+
+<h2 id="images">2. Images with Attributes</h2>
+
+<figure>
+<img src="campus.jpg" alt="Main building of college campus with garden in front" width="600" height="300" loading="lazy" title="Our College Campus">
+<figcaption>Fig 1: College Campus - src, alt, width, height, title used</figcaption>
+</figure>
+
+<p><b>Image as a Link (click image to open Google):</b></p>
+<a href="https://www.google.com" target="_blank" title="Click to open Google">
+<img src="logo.png" alt="College Logo - Click to open Google" width="150" height="100">
+</a>
+
+<p><b>Image with broken src - alt text shows:</b></p>
+<img src="missing.jpg" alt="This alt text appears when image fails to load" width="300">
+
+<hr>
+<h2 id="contact">3. Contact</h2>
+<address>
+Admin Office,<br>
+College Road, Delhi - 110001<br>
+Email: <a href="mailto:info@college.edu">info@college.edu</a>
+</address>
+
+<p><a href="#top">↑ Back to Top</a></p>
+
+</body>
+</html>
