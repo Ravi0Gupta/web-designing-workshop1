@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Student Admission</title></head>
+<body>
+<a href="#main">Skip to main content</a>
+<header><h1>College Admission 2026</h1>
+<nav><a href="#">Home</a> | <a href="#">Courses</a> | <a href="#">Admission</a></nav></header>
+<main id="main">
+<h2>Courses Offered</h2>
+<table border="1" cellpadding="8"><caption>Course Fees</caption>
+<thead><tr><th>Course</th><th>Duration</th><th>Fees</th></tr></thead>
+<tbody><tr><td>BCA</td><td>3 Years</td><td>60000 / year</td></tr>
+<tr><td>BBA</td><td>3 Years</td><td>55000 / year</td></tr></tbody></table>
+<h2>Admission Form</h2>
+<form method="post" action="submit.php">
+<label for="n">Full Name:</label><input id="n" type="text" required><br><br>
+<label for="e">Email:</label><input id="e" type="email" required><br><br>
+<label for="m">Mobile:</label><input id="m" type="tel" pattern="[0-9]{10}" title="Enter exactly 10 digits" required><br><br>
+<label for="c">Course:</label><select id="c"><option>BCA</option><option>BBA</option></select><br><br>
+<label for="addr">Address:</label><br><textarea id="addr" rows="3" cols="30"></textarea><br><br>
+<button type="submit">Apply Now</button>
+</form>
+</main>
+<footer><p>&copy; 2026 College - Admission Cell</p></footer>
+</body>
+</html>
