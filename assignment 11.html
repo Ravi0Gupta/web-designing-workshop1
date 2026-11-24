@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 11 - Accessible Page</title>
+<style>
+body{font-family:Arial;max-width:800px;margin:20px auto;line-height:1.7;color:#111;background:#fff}
+.skip-link{position:absolute;left:-999px}
+.skip-link:focus{position:static;background:yellow;padding:8px;display:inline-block}
+a:focus, input:focus, button:focus{outline:3px solid blue;outline-offset:2px}
+nav a{margin-right:15px}
+label{display:block;margin-top:10px;font-weight:bold}
+input,button{padding:8px;font-size:16px}
+button{background:#000;color:#fff;border:none;border-radius:4px;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- 1. SKIP LINK - for keyboard / screen reader users -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- 2. SEMANTIC LANDMARKS -->
+<header>
+<h1>Accessible College Portal</h1>
+<nav aria-label="Main navigation">
+<a href="#">Home</a>
+<a href="#">Courses</a>
+<a href="#">Admission</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<main id="main">
+<h2>Why Accessibility Matters</h2>
+<p>This page can be used by everyone - including people using keyboard only and screen readers.</p>
+
+<!-- 3. IMAGE WITH MEANINGFUL ALT -->
+<h2>Campus</h2>
+<img src="campus.jpg" alt="College main building with ramp for wheelchair access and garden in front" width="600" height="300">
+<p>Decorative image below has empty alt so screen reader skips it:</p>
+<img src="divider.png" alt="" width="100">
+
+<!-- 4. FORM WITH LABELS + ARIA -->
+<h2>Search Courses</h2>
+<form role="search" aria-label="Course search form">
+<label for="search">Search for a course:</label>
+<input id="search" type="search" name="q" placeholder="e.g. BCA" aria-describedby="search-help" required>
+<p id="search-help">Type BCA, BBA or B.Com and press Search.</p>
+<button type="submit" aria-label="Search courses">Search</button>
+</form>
+
+<!-- 5. PROPER HEADING ORDER + LIST -->
+<h2>Admission Steps</h2>
+<ol>
+<li>Fill the form</li>
+<li>Upload documents</li>
+<li>Pay fees</li>
+</ol>
+
+<h3>Need Help?</h3>
+<p>Call us on <a href="tel:+911122334455">+91 11 2233 4455</a> or email <a href="mailto:help@college.edu">help@college.edu</a></p>
+
+</main>
+
+<footer>
+<p>&copy; 2026 College - This page uses lang="en", skip link, alt text, labels, aria-labels and keyboard focus.</p>
+</footer>
+
+</body>
+</html>
