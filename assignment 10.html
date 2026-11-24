@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 10 - Multimedia</title>
+<style>
+body{font-family:Arial;max-width:800px;margin:20px auto;line-height:1.6}
+figure{background:#f9f9f9;padding:12px;border-radius:8px}
+video,audio{width:100%;max-width:600px}
+iframe{border:0;border-radius:8px}
+</style>
+</head>
+<body>
+
+<h1>College Multimedia Gallery</h1>
+<p>One page with Image, Video, Audio and YouTube video.</p>
+
+<h2>1. Image</h2>
+<figure>
+<img src="campus.jpg" alt="College campus main building with students" width="600" height="320" loading="lazy">
+<figcaption>Our College Campus - Annual Day 2026</figcaption>
+</figure>
+
+<h2>2. Video (Local MP4)</h2>
+<figure>
+<video width="600" height="340" controls poster="campus.jpg" preload="metadata">
+<source src="tour.mp4" type="video/mp4">
+<source src="tour.webm" type="video/webm">
+Your browser does not support the video tag. <a href="tour.mp4">Download video</a>
+</video>
+<figcaption>Campus Tour Video - controls, poster, 2 sources</figcaption>
+</figure>
+
+<h2>3. Audio (Local MP3)</h2>
+<figure>
+<audio controls preload="none">
+<source src="anthem.mp3" type="audio/mpeg">
+<source src="anthem.ogg" type="audio/ogg">
+Your browser does not support the audio tag.
+</audio>
+<figcaption>College Anthem - Press play to listen</figcaption>
+</figure>
+
+<h2>4. YouTube Video (Embed)</h2>
+<figure>
+<iframe width="600" height="340"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+title="College Annual Function Video on YouTube"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</figure>
+
+
+
+</body>
+</html>
